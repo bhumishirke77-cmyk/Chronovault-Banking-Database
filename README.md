@@ -1,0 +1,2 @@
+# Chronovault-Banking-Database
+A complete Banking Database System built in MySQL with 10 tables, 50 branches, 370 employees, 315 customers and 10,000 transactions. Covers real world banking use cases like fraud detection, EMI default risk, loan risk classification, customer segmentation and branch performance analysis using advanced SQL concepts including joins, subqueries, views, CASE statements and window functions.
