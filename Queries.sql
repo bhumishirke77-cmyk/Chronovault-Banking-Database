@@ -220,4 +220,23 @@ group by c.customer_name,br.branch_name
 having count(distinct l.loan_id)>1
 and sum(l.outstanding_balance)>500000
 order by total_outstanding_balance desc;
-
+-- Customer Loyalty Tier Classification with Ranking
+select c.customer_id,c.customer_name,c.email_id,b.branch_name,bal.current_balance,
+datediff(current_date,c.customer_since) as days_as_customer,
+case 
+    when datediff(current_date,c.customer_since) >= 1000 and bal.current_balance > 100000 then 'Gold'
+    when datediff(current_date,c.customer_since)>=500 and bal.current_balance>50000 then 'Silver'
+    else 'Bronze'
+end as loyalty_tier,
+rank() over(partition by  
+    case
+        when datediff(current_date,c.customer_since) >= 1000 and bal.current_balance > 100000 then 'Gold'
+        when datediff(current_date,c.customer_since)>=500 and bal.current_balance>50000 then 'Silver'
+        else 'Bronze'
+    end       
+    order by bal.current_balance desc) as rank_in_tier
+from customers as c
+join branches as b on c.branch_id=b.branch_id
+join accounts as a on c.customer_id=a.customer_id
+join balances as bal on a.account_id=bal.account_id
+order by loyalty_tier, rank_in_tier;
