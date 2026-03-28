@@ -1,5 +1,5 @@
 # Chronovault-Banking-Database
-Chronovault is a complete banking database system build in MySql. It stimulates real-world banking operations including customers management,transaction processing,loan management, and branch-level analytics.
+Chronovault is a complete banking database system built in MySql. It simulates real-world banking operations including customer management,transaction processing,loan management, and branch-level analytics.
 This system contains:
 • 10 Normalized relational tables
 •50 Branches
@@ -9,9 +9,10 @@ This system contains:
 •10,000 Bank_Transactions
 •416 Balances
 •416 Liabilities
-•10,000Transaction History •500 Loans
+•10,000 Transaction History 
+•500 Loans
 -- -- -- -- -- -- -- -- -- 
-* Concept Covered
+* Concepts Covered
 - Database design and normalization
 - Primary keys, foreign keys and constraints
 - Indexes for query optimization
@@ -23,7 +24,7 @@ This system contains:
 - Window functions — RANK and PARTITION BY
 - EXISTS for existence checks
 -- -- -- -- -- -- -- -- -- 
-* Real World Queries Solution
+* Real-World Query Solution
 - Fraud Detection — accounts with suspicious withdrawals in a single day
 - EMI Default Risk — customers whose balance is less than their EMI amount
 - Critical Risk Detection — customers with multiple defaulted loans
@@ -33,7 +34,7 @@ This system contains:
 - Branch Performance Analysis — top branches by withdrawal volume
 - Top Valuable Customers — by total deposits and loan flow
 -- -- -- -- -- -- -- -- -- --
-* Tools use
+* Tools used
 - MySQL
 - MySQL Workbench
 -- -- -- -- -- -- -- -- -- -- 
