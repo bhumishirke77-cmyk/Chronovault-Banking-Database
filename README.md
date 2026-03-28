@@ -39,7 +39,7 @@ This system contains:
 - MySQL Workbench
 -- -- -- -- -- -- -- -- -- -- 
 * Sample Query
-  The query detects customers who withdrawal more than 50,000INR in a single day
+  The query detects customers who withdrew more than 50,000INR in a single day
   By joining 4 tables - Flagged as suspicious activity across all the Branches.
 ```sql
 select c.customer_id,c.customer_name,a.account_id,b.branch_name,date(t.transaction_date) as transaction_day ,sum(t.transaction_amount) as total_withdrawal
