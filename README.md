@@ -1,4 +1,4 @@
-# Chronovault-Banking-Database
+ # Chronovault-Banking-Database
 Chronovault is a complete banking database system built in MySql. It simulates real-world banking operations including customer management,transaction processing,loan management, and branch-level analytics.
 This system contains:
 • 10 Normalized relational tables
@@ -38,5 +38,21 @@ This system contains:
 - MySQL
 - MySQL Workbench
 -- -- -- -- -- -- -- -- -- -- 
+* Sample Query
+  The query detects customers who withdrawal more than 50,000INR in a single day
+  By joining 4 tables - Flagged as suspicious activity across all the Branches.
+  ```sql
+select c.customer_id,c.customer_name,a.account_id,b.branch_name,date(t.transaction_date) as transaction_day ,sum(t.transaction_amount) as total_withdrawal
+from bank_transactions as t
+join accounts as a on t.account_id=a.account_id
+join customers as c on a.customer_id=c.customer_Id
+join branches as b on c.branch_id = b.branch_id 
+where t.transaction_type ='Withdrawal'
+group by c.customer_id,c.customer_name,a.account_id,b.branch_name,date(t.transaction_date)
+having sum(t.transaction_amount)>50000;
+```
+<img width="818" height="233" alt="Screenshot 2026-03-28 at 4 55 11 PM" src="https://github.com/user-attachments/assets/97a2bc89-90dc-46a8-96ea-73935a819bc6" />
 * Author
 Bhumi
+
+
