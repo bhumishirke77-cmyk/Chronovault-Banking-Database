@@ -41,7 +41,7 @@ This system contains:
 * Sample Query
   The query detects customers who withdrawal more than 50,000INR in a single day
   By joining 4 tables - Flagged as suspicious activity across all the Branches.
-  ```sql
+```sql
 select c.customer_id,c.customer_name,a.account_id,b.branch_name,date(t.transaction_date) as transaction_day ,sum(t.transaction_amount) as total_withdrawal
 from bank_transactions as t
 join accounts as a on t.account_id=a.account_id
