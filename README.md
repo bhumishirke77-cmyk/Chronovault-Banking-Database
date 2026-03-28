@@ -52,6 +52,9 @@ group by c.customer_id,c.customer_name,a.account_id,b.branch_name,date(t.transac
 having sum(t.transaction_amount)>50000;
 ```
 <img width="818" height="233" alt="Screenshot 2026-03-28 at 4 55 11 PM" src="https://github.com/user-attachments/assets/97a2bc89-90dc-46a8-96ea-73935a819bc6" />
+* DataBase Schema - ERD
+<img width="713" height="1250" alt="ERD" src="https://github.com/user-attachments/assets/a3093d88-4138-4e7d-ae91-83de6030c311" />
+
 * Author
 Bhumi
 
