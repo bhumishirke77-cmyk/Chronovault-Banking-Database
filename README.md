@@ -54,7 +54,12 @@ having sum(t.transaction_amount)>50000;
 <img width="818" height="233" alt="Screenshot 2026-03-28 at 4 55 11 PM" src="https://github.com/user-attachments/assets/97a2bc89-90dc-46a8-96ea-73935a819bc6" />
 * DataBase Schema - ERD
 <img width="713" height="1250" alt="ERD" src="https://github.com/user-attachments/assets/a3093d88-4138-4e7d-ae91-83de6030c311" />
-
+* Data Normalization
+  All 10 tables are structure upto 3NF.
+  -1NF - Each column stores only one value. No repeated groups.
+  -2NF - Every column depend on Primary-Key, not just part of it.
+  -3NF - No columns depend on another non-key column.
+ This keeps data clean,avoid manipulation and make queries faster.
 * Author
 Bhumi
 
