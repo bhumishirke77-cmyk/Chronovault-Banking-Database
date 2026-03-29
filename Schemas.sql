@@ -109,3 +109,20 @@ CREATE TABLE Loans(
 CREATE INDEX idx_customers_branch ON Customers(branch_id);
 CREATE INDEX idx_accounts_customer ON Accounts(customer_id);
 CREATE INDEX idx_transactions_account ON Bank_transactions(account_id);
+DELIMITER $$
+create trigger update_balance_after_transaction
+after insert on bank_transactions
+for each row
+begin 
+    if new.transaction_type='Deposit' then
+      update balances
+      set current_balance= current_balance+ new.transaction_amount
+      where account_id = NEW.account_id;
+      
+	elseif NEW.transaction_type ='Withdrawal' then 
+      update balances
+      set current_balance=current_balance-new.transaction_amount
+      where account_id=NEW.account_id;
+	end if;
+end $$
+DELIMITER;
