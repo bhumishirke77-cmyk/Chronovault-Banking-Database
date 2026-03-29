@@ -240,3 +240,33 @@ join branches as b on c.branch_id=b.branch_id
 join accounts as a on c.customer_id=a.customer_id
 join balances as bal on a.account_id=bal.account_id
 order by loyalty_tier, rank_in_tier;
+-- Use trigger Here to update the customer Balance according to transaction_type
+DELIMITER $$
+create trigger update_balance_after_transaction
+after insert on bank_transactions
+for each row
+begin 
+    if new.transaction_type='Deposit' then
+      update balances
+      set current_balance= current_balance+ new.transaction_amount
+      where account_id = NEW.account_id;
+      
+	elseif NEW.transaction_type ='Withdrawal' then 
+      update balances
+      set current_balance=current_balance-new.transaction_amount
+      where account_id=NEW.account_id;
+	end if;
+end $$
+SELECT account_id, current_balance 
+FROM balances 
+WHERE account_id = 1;
+INSERT INTO bank_transactions 
+(account_id, transaction_type, transaction_amount, transaction_date)
+VALUES 
+(1, 'Deposit', 5000, NOW());
+SELECT account_id, current_balance 
+FROM balances 
+WHERE account_id = 1;
+
+
+      
