@@ -125,4 +125,4 @@ begin
       where account_id=NEW.account_id;
 	end if;
 end $$
-DELIMITER;
+DELIMITER ;
