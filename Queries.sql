@@ -257,16 +257,8 @@ begin
       where account_id=NEW.account_id;
 	end if;
 end $$
-SELECT account_id, current_balance 
-FROM balances 
-WHERE account_id = 1;
-INSERT INTO bank_transactions 
-(account_id, transaction_type, transaction_amount, transaction_date)
-VALUES 
-(1, 'Deposit', 5000, NOW());
-SELECT account_id, current_balance 
-FROM balances 
-WHERE account_id = 1;
+DELIMITER;
+
 
 
       
