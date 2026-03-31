@@ -81,13 +81,13 @@ on b.branch_id=c.branch_id
 join accounts as a
 on c.customer_id=a.customer_id;
 -- The customers who have more than 1 accounts
-select c.customer_id,c.customer_name,count(*) total_accounts
+select c.customer_id,c.customer_name,count(a.account_id) total_accounts
 from customers as c
 join accounts as a
 on c.customer_id =a.customer_id
 group by c.customer_id,c.customer_name
-having count(*) >1;
--- The empoloyees working in the same branch as customer 'Amit Sharma'
+having count(a.account_id) >1;
+-- The employees working in the same branch as customer 'Amit Sharma'
 select e.employee_id,e.employee_name
 from employees as e
 where e.branch_id = (
@@ -133,17 +133,6 @@ join branches as b on c.branch_id = b.branch_id
 where t.transaction_type ='Withdrawal'
 group by c.customer_id,c.customer_name,a.account_id,b.branch_name,date(t.transaction_date)
 having sum(t.transaction_amount)>50000;
--- customers whose balances is above the branch average
-select c.customer_id,
-       c.customer_name,
-       bal.current_balance
-from customers c
-join accounts a on c.customer_id = a.customer_id
-join balances bal on a.account_id = bal.account_id
-where bal.current_balance > (
-    select avg(current_balance)
-    from balances
-);
 -- Customer Category Based on Balances
 select c.customer_id,c.customer_name,b.current_balance,
 case
