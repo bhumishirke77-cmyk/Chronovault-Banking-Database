@@ -1,0 +1,51 @@
+branch_id,branch_name,branch_country,branch_state,branch_city,branch_created_date,ifsc_code
+1,"Mumbai Central Updated",India,Maharashtra,Mumbai,"2026-02-12 18:50:39",CHRN0000001
+2,"Pune Main",India,Maharashtra,Pune,"2026-02-12 18:50:39",CHRN0000002
+3,"Nagpur City",India,Maharashtra,Nagpur,"2026-02-12 18:50:39",CHRN0000003
+4,"Delhi Connaught",India,Delhi,NewDelhi,"2026-02-12 18:50:39",CHRN0000004
+5,"Noida Sector18",India,"Uttar Pradesh",Noida,"2026-02-12 18:50:39",CHRN0000005
+6,"Lucknow Hazratganj",India,"Uttar Pradesh",Lucknow,"2026-02-12 18:50:39",CHRN0000006
+7,"Jaipur PinkCity",India,Rajasthan,Jaipur,"2026-02-12 18:50:39",CHRN0000007
+8,"Udaipur LakeView",India,Rajasthan,Udaipur,"2026-02-12 18:50:39",CHRN0000008
+9,"Ahmedabad CGRoad",India,Gujarat,Ahmedabad,"2026-02-12 18:50:39",CHRN0000009
+10,"Surat Diamond",India,Gujarat,Surat,"2026-02-12 18:50:39",CHRN0000010
+11,"Bangalore TechPark",India,Karnataka,Bangalore,"2026-02-12 18:50:39",CHRN0000011
+12,"Mysore Palace",India,Karnataka,Mysore,"2026-02-12 18:50:39",CHRN0000012
+13,"Chennai Marina",India,"Tamil Nadu",Chennai,"2026-02-12 18:50:39",CHRN0000013
+14,"Coimbatore Central",India,"Tamil Nadu",Coimbatore,"2026-02-12 18:50:39",CHRN0000014
+15,"Hyderabad Hitech",India,Telangana,Hyderabad,"2026-02-12 18:50:39",CHRN0000015
+16,"Warangal Urban",India,Telangana,Warangal,"2026-02-12 18:50:39",CHRN0000016
+17,"Kolkata ParkStreet",India,"West Bengal",Kolkata,"2026-02-12 18:50:39",CHRN0000017
+18,"Siliguri HillView",India,"West Bengal",Siliguri,"2026-02-12 18:50:39",CHRN0000018
+19,"Bhopal LakeCity",India,"Madhya Pradesh",Bhopal,"2026-02-12 18:50:39",CHRN0000019
+20,"Indore VijayNagar",India,"Madhya Pradesh",Indore,"2026-02-12 18:50:39",CHRN0000020
+21,"Patna GandhiMaidan",India,Bihar,Patna,"2026-02-12 18:50:39",CHRN0000021
+22,"Ranchi Main",India,Jharkhand,Ranchi,"2026-02-12 18:50:39",CHRN0000022
+23,"Chandigarh Plaza",India,Punjab,Chandigarh,"2026-02-12 18:50:39",CHRN0000023
+24,"Amritsar Golden",India,Punjab,Amritsar,"2026-02-12 18:50:39",CHRN0000024
+25,"Shimla Ridge",India,"Himachal Pradesh",Shimla,"2026-02-12 18:50:39",CHRN0000025
+26,"Dehradun Valley",India,Uttarakhand,Dehradun,"2026-02-12 18:50:39",CHRN0000026
+27,"Guwahati RiverFront",India,Assam,Guwahati,"2026-02-12 18:50:39",CHRN0000027
+28,"Shillong Hills",India,Meghalaya,Shillong,"2026-02-12 18:50:39",CHRN0000028
+29,"Bhubaneswar Temple",India,Odisha,Bhubaneswar,"2026-02-12 18:50:39",CHRN0000029
+30,"Cuttack Silver",India,Odisha,Cuttack,"2026-02-12 18:50:39",CHRN0000030
+31,"Raipur Central",India,Chhattisgarh,Raipur,"2026-02-12 18:50:39",CHRN0000031
+32,"Bilaspur Junction",India,Chhattisgarh,Bilaspur,"2026-02-12 18:50:39",CHRN0000032
+33,"Thiruvananthapuram City",India,Kerala,Trivandrum,"2026-02-12 18:50:39",CHRN0000033
+34,"Kochi Port",India,Kerala,Kochi,"2026-02-12 18:50:39",CHRN0000034
+35,"Panaji Beach",India,Goa,Panaji,"2026-02-12 18:50:39",CHRN0000035
+36,"Jammu Residency",India,"Jammu & Kashmir",Jammu,"2026-02-12 18:50:39",CHRN0000036
+37,"Srinagar DalLake",India,"Jammu & Kashmir",Srinagar,"2026-02-12 18:50:39",CHRN0000037
+38,"Agra Taj",India,"Uttar Pradesh",Agra,"2026-02-12 18:50:39",CHRN0000038
+39,"Varanasi Ghat",India,"Uttar Pradesh",Varanasi,"2026-02-12 18:50:39",CHRN0000039
+40,"Gurgaon Cyber",India,Haryana,Gurgaon,"2026-02-12 18:50:39",CHRN0000040
+41,"Faridabad Metro",India,Haryana,Faridabad,"2026-02-12 18:50:39",CHRN0000041
+42,"Jodhpur BlueCity",India,Rajasthan,Jodhpur,"2026-02-12 18:50:39",CHRN0000042
+43,"Vadodara Central",India,Gujarat,Vadodara,"2026-02-12 18:50:39",CHRN0000043
+44,"Hubli Market",India,Karnataka,Hubli,"2026-02-12 18:50:39",CHRN0000044
+45,"Madurai Temple",India,"Tamil Nadu",Madurai,"2026-02-12 18:50:39",CHRN0000045
+46,"Vijayawada River",India,"Andhra Pradesh",Vijayawada,"2026-02-12 18:50:39",CHRN0000046
+47,"Visakhapatnam Port",India,"Andhra Pradesh",Visakhapatnam,"2026-02-12 18:50:39",CHRN0000047
+48,"Dhanbad Coal",India,Jharkhand,Dhanbad,"2026-02-12 18:50:39",CHRN0000048
+49,"Aurangabad City",India,Maharashtra,Aurangabad,"2026-02-12 18:50:39",CHRN0000049
+50,"Kolhapur Royal",India,Maharashtra,Kolhapur,"2026-02-12 18:50:39",CHRN0000050
